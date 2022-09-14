@@ -1,0 +1,22 @@
+def convierte():
+ numero=input("Por favor ingrese el numero: ")
+
+ print (f"el numero introducido es  {numero}")
+ M = int (input("Ahora especifica en que base esta el numero anterior 8 es octal, 16 es hexadecimal y 2 es binario: "))
+
+ N = int (input("Ahora ingresa a que base quieres cambiar el numero (las bases son iguales a las anteriores): "))
+
+ print(int(numero,N))
+
+ N=input("Digite el numero anterior para tambien transformar a Ascii:")
+ 
+ print("Numero 1")
+ for a in numero:
+    print ('%s: Alt %i' % (a, ord(a)))
+  
+ print("Numero 2")
+ for a in N:
+    print ('%s: Alt %i' % (a, ord(a)))
+   
+
+convierte()
